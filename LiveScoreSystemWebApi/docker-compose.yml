@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  livescoresystemwebapi:
+    image: ${DOCKER_REGISTRY-}livescoresystemwebapi
+    build:
+      context: .\LiveScoreSystemWebApi
+      dockerfile: Dockerfile
